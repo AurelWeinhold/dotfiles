@@ -64,6 +64,73 @@ else
   export EDITOR='nvim'
 fi
 
+#
+### aliases ###
+#
+
+alias rf='rm -rf'						# remove folder
+alias grep='grep -ni --color=always'	# nicer grep output
+
+alias locate="locate -i"
+alias term="$TERMINAL"
+
+# neovim
+alias vim='nvim'	# never use vim, instead use neovim
+alias vi='vim'		# never use vi instead use vim
+alias im='vim'
+
+alias virc="cd $XDG_CONFIG_HOME/nvim"
+alias vimrc="virc"
+
+alias open='xdg-open'	# opens files
+alias cl='clear'
+
+# ls
+alias l="ls -lh --group-directories-first --sort=extension --color -Itags"
+alias la="l -A"
+alias o="l"
+alias ö="l"
+alias lö="l"
+
+alias tree="tree -a"
+
+# cd
+alias -- -='cd -'
+alias cd..='cd ..'
+alias cd.="cd .."
+alias cd .="cd .."
+
+# exit
+alias :wq="exit"
+alias wq="exit"
+alias q="exit"
+alias exir="exit"
+alias exi="exit"
+alias exut="exit"
+alias rxit="exit"
+
+alias texc="latexmk -output-directory=build -pdf -pvc -shell-escape"
+
+alias recoll="recoll -c $XDG_CONFIG_HOME/recoll"
+alias recollindex="recollindex -c $XDG_CONFIG_HOME/recoll"
+
+# git
+alias gst="git status"
+alias gc="git commit"
+alias gps="git push"
+alias gpl="git pull"
+alias ga="git add"
+alias gap="git add -p"
+alias gd="git diff"
+alias gl="git log"
+
+# make
+alias maek="make"
+alias mak="make"
+alias mek="make"
+
+### \aliases ###
+
 # direnv hooks to enable direnv to work only if it exists
 [ direnv ] && eval "$(direnv hook zsh)"
 
