@@ -14,6 +14,11 @@ function pre()
 	[ -d "$target/.local/share" ] || mkdir -p "$target/.local/share"
 }
 
+function post()
+{
+	echo "Don't forget to check for any specific instructions in any of the applications submodules readme.md!"
+}
+
 function install_all()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
@@ -24,3 +29,4 @@ function install_all()
 
 pre
 install_all
+post
