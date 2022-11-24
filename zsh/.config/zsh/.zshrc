@@ -13,7 +13,18 @@ source $ZDOTDIR/plugins/vi-mode.zsh
 
 # !!! Other plugins before this line !!!
 source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
 ###### /PLUGINS ######
+
+#
+###### CONFIGURATION ######
+#
+# use history-substring-search methods for going through the history
+bindkey '^P' history-substring-search-up
+bindkey '^N' history-substring-search-down
+
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # more history
 export HISTSIZE=1000000000
