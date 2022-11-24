@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
-stow --restow --target="$HOME" --ignore="readme.md" \
+# configuration
+target="$HOME"
+
+stow --restow --target="$target" --ignore="readme.md" \
 	nvim \
 	zsh
