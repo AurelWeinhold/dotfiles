@@ -19,6 +19,31 @@ source $ZDOTDIR/plugins/zsh-history-substring-search/zsh-history-substring-searc
 #
 ###### CONFIGURATION ######
 #
+# shift-tab to reverse through completion list
+bindkey '^[[Z' reverse-menu-complete
+
+# The following lines were added by compinstall
+zstyle ':completion:*' completer _complete _ignored _correct _approximate
+zstyle ':completion:*' expand prefix suffix
+zstyle ':completion:*' file-sort name
+zstyle ':completion:*' ignore-parents parent pwd .. directory
+zstyle ':completion:*' insert-unambiguous true
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' list-suffixes true
+zstyle ':completion:*' matcher-list '+m:{[:lower:]}={[:upper:]} r:|[._-]=* r:|=*' '' '' 'l:|=* r:|=*'
+zstyle ':completion:*' max-errors 1
+zstyle ':completion:*' original true
+zstyle ':completion:*' special-dirs false
+zstyle ':completion:*' verbose true
+zstyle :compinstall filename "$ZDOTDIR/.zshrc"
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# show dotfiles in completion list
+_comp_options+=(globdots)
+
 # use history-substring-search methods for going through the history
 bindkey '^P' history-substring-search-up
 bindkey '^N' history-substring-search-down
