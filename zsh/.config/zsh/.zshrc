@@ -10,6 +10,9 @@ fi
 #
 source $ZDOTDIR/themes/powerlevel10k/powerlevel10k.zsh-theme
 source $ZDOTDIR/plugins/vi-mode.zsh
+
+# !!! Other plugins before this line !!!
+source $ZDOTDIR/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ###### /PLUGINS ######
 
 # more history

@@ -4,3 +4,6 @@
 [submodule "zsh/.config/zsh/plugins/vi-mode.zsh"]
 	path = zsh/.config/zsh/plugins/vi-mode.zsh
 	url = https://github.com/woefe/vi-mode.zsh.git
+[submodule "zsh/.config/zsh/plugins/zsh-syntax-highlighting"]
+	path = zsh/.config/zsh/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
