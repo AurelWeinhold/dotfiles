@@ -1,3 +1,6 @@
 [submodule "zsh/.config/zsh/themes/powerlevel10k"]
 	path = zsh/.config/zsh/themes/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
+[submodule "zsh/.config/zsh/plugins/vi-mode.zsh"]
+	path = zsh/.config/zsh/plugins/vi-mode.zsh
+	url = https://github.com/woefe/vi-mode.zsh.git

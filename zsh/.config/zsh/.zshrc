@@ -9,6 +9,7 @@ fi
 ###### PLUGINS ######
 #
 source $ZDOTDIR/themes/powerlevel10k/powerlevel10k.zsh-theme
+source $ZDOTDIR/plugins/vi-mode.zsh
 ###### /PLUGINS ######
 
 # more history
