@@ -14,7 +14,13 @@ function pre()
 	[ -d "$target/.local/share" ] || mkdir -p "$target/.local/share"
 }
 
+function install_all()
+{
+	stow --restow --target="$target" --ignore="readme.md" \
+		nvim \
+		zsh
+}
+
+
 pre
-stow --restow --target="$target" --ignore="readme.md" \
-	nvim \
-	zsh
+install_all
