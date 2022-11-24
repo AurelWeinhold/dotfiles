@@ -5,3 +5,4 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 # zsh
 export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export HISTFILE="$XDG_CACHE_HOME/zsh/hist"

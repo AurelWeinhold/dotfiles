@@ -54,7 +54,6 @@ bindkey -M vicmd 'j' history-substring-search-down
 # more history
 export HISTSIZE=1000000000
 export SAVEHIST=1000000000
-export HISTFILE=$XDG_CACHE_HOME/zsh/hist
 setopt EXTENDED_HISTORY
 setopt share_history
 
