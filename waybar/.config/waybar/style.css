@@ -1,0 +1,122 @@
+/** COLORS **/
+
+@define-color black       #1d2021;
+@define-color darkgray    #928374;
+@define-color darkred     #cc241d;
+@define-color red         #fb4934;
+@define-color darkgreen   #98971a;
+@define-color green       #b8bb26;
+@define-color darkyellow  #d79921;
+@define-color yellow      #fabd2f;
+@define-color darkblue    #458588;
+@define-color blue        #83a598;
+@define-color darkmagenta #b16286;
+@define-color magenta     #d3869b;
+@define-color darkcyan    #689d6a;
+@define-color cyan        #8ec07c;
+@define-color lightgray   #a89984;
+@define-color white       #ebdbb2;
+
+@define-color bg @black;
+@define-color fg @white;
+
+/** \COLORS **/
+
+/** BAR **/
+
+* {
+	border: none;
+	border-radius: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 0;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+window#waybar {
+	background: transparent; /* allow gaps to be visible */
+}
+
+window > box {
+    font-size: 12pt;
+    font-family: Hack;
+	background: @bg;
+    color: @fg;
+
+	/* gaps */
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+/** \BAR **/
+
+
+/** WORKSPACES **/
+
+#custom-dwl_tag {
+    background-color: @bg;
+	background: transparent;
+    color: @fg;
+	font-weight: bold;
+
+	padding-left:  7px;
+	padding-right: 7px;
+}
+
+#custom-dwl_tag.selected {
+	background: @darkcyan;
+	color: @bg;
+}
+
+#custom-dwl_tag.urgent {
+	background-color: @darkred;
+}
+
+/** \WORKSPACES **/
+
+/** MODULES **/
+
+#pulseaudio, #backlight, #network, #battery, #clock {
+	color: @bg;
+	margin-left: 3px;
+	margin-right: 3px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+
+	padding-left: 7px;
+	padding-right: 7px;
+
+	border-radius: 12px;
+}
+
+#pulseaudio {
+	background-color: @darkgreen;
+}
+
+#backlight {
+	background-color: @darkcyan;
+}
+
+#network {
+	background-color: @darkblue;
+}
+
+#battery {
+	background-color: @darkgreen;
+}
+
+#battery.warning:not(.charging) {
+    background-color: @darkyellow;
+}
+
+#battery.critical:not(.charging) {
+    background-color: @darkred;
+}
+
+#clock {
+	background-color: @darkmagenta;
+}
+
+/** \MODULES **/
