@@ -2,7 +2,6 @@
 	"output": "eDP-1",
     "layer": "top",
     "position": "bottom",
-    "height": 35,
     "spacing": 0,
 
 	"modules-left": [
@@ -151,7 +150,6 @@
 	"output": "DP-8",
     "layer": "top",
     "position": "bottom",
-    "height": 35,
     "spacing": 0,
 
 	"modules-left": [
@@ -300,7 +298,6 @@
 	"output": "DP-4",
     "layer": "top",
     "position": "bottom",
-    "height": 35,
     "spacing": 0,
 
 	"modules-left": [
