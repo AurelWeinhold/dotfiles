@@ -39,56 +39,43 @@ window#waybar {
 }
 
 window > box {
-    font-size: 12pt;
+    font-size: 11pt;
     font-family: Hack;
-	background: @bg;
+	background-color: @bg;
     color: @fg;
+	padding: 2px;
 
 	/* gaps */
-    margin-left: 4px;
-    margin-right: 4px;
-    margin-bottom: 4px;
+    margin: 4px;
+	margin-top: 0;
 }
 
 /** \BAR **/
 
 
-/** WORKSPACES **/
+/** MODULES **/
+
+/* all */
+#custom-dwl_tag, #pulseaudio, #backlight, #network, #battery, #clock {
+	color: @bg;
+	/* top right bottom left */
+	padding: 6px 7px 4px 7px;
+	border-radius: 4px;
+}
+/* \all */
 
 #custom-dwl_tag {
-    background-color: @bg;
-	background: transparent;
     color: @fg;
-	font-weight: bold;
-
-	padding-left:  7px;
-	padding-right: 7px;
 }
 
 #custom-dwl_tag.selected {
-	background: @darkcyan;
+	background-color: @darkcyan;
 	color: @bg;
 }
 
 #custom-dwl_tag.urgent {
 	background-color: @darkred;
-}
-
-/** \WORKSPACES **/
-
-/** MODULES **/
-
-#pulseaudio, #backlight, #network, #battery, #clock {
 	color: @bg;
-	margin-left: 3px;
-	margin-right: 3px;
-	margin-top: 3px;
-	margin-bottom: 3px;
-
-	padding-left: 7px;
-	padding-right: 7px;
-
-	border-radius: 12px;
 }
 
 #pulseaudio {
