@@ -1,4 +1,4 @@
-# credit: https://codeberg.org/fauxmight/waybar-dwl/src/branch/main/waybar-dwl.sh
+# based on: https://codeberg.org/fauxmight/waybar-dwl/src/branch/main/waybar-dwl.sh
 #
 # Variables
 declare output title layout activetags selectedtags
@@ -18,6 +18,14 @@ _cycle() {
 		this_tag="${component}"
 		unset this_status
 		mask=$((1<<this_tag))
+
+		# Only show active or selected tags
+		if ! (( "$selectedtags" & mask )) 2>/dev/null; then
+			if ! (( "${activetags}" & mask )) 2>/dev/null; then
+				printf -- '{"text":"","class":[%s]}\n' "${this_status}"
+				return
+			fi
+		fi
 
 		if (( "${activetags}"   & mask )) 2>/dev/null; then this_status+='"active",'  ; fi
 		if (( "${selectedtags}" & mask )) 2>/dev/null; then this_status+='"selected",'; fi
