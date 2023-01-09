@@ -1,0 +1,71 @@
+#!/usr/bin/env sh
+
+# usage: monctl [single|docked|split|beamer|presentation $monitor]
+
+# TODO(Aurel): Maybe not set preferred resolution but rather set fixed 1080x1920
+
+[[ $# -lt 1 ]] &&
+	echo "usage: monctl [single|docked|split|beamer|present \$monitor]" &&
+	exit
+
+if [[ $(echo "$WAYLAND_DISPLAY") ]]; then
+    # wayland
+	# eDP-1 seems to be stable, the rest is not
+	laptopmon=eDP-1
+	centermon=$(wlr-randr | grep "Samsung" | awk  '{ print $1 }')
+	rightmon=$(wlr-randr | grep "LG" | awk  '{ print $1 }')
+	
+	echo $laptopmon
+	echo $centermon
+	echo $rightmon
+
+    case "$1" in
+        "single")
+            # only enable laptop monitor
+            wlr-randr \
+                --output $laptopmon --preferred --pos 0,0 \
+                --output $centermon --off \
+                --output $rightmon --off \
+            ;;
+        "docked")
+            # disable laptop monitor and enable both centermon and rightmon
+            wlr-randr \
+                --output $laptopmon --off \
+                --output $centermon --preferred --pos 0,0 \
+                --output $rightmon --preferred --pos 1920,0
+            ;;
+        *)
+            exit
+            ;;
+    esac
+else
+    # X11
+	laptopmon=eDP-1
+    rightmon=DP-1-1
+    centermon=DP-2-2
+    beamer=DP-2
+
+    case "$1" in
+        "single")
+            # only enable laptop monitor
+            xrandr \
+                --output $laptopmon --auto --primary \
+                --output $centermon --off \
+                --output $rightmon --off \
+                --output $beamer --off
+            ;;
+        "docked")
+            # disable laptop monitor and enable both centermon and rightmon
+            xrandr \
+                --output $laptopmon --off \
+                --output $centermon --auto --primary \
+                --output $rightmon --auto --right-of $centermon \
+                --output $beamer --off
+
+            # update background
+            ;;
+        *)
+            exit
+            ;;
+    esac
+fi
