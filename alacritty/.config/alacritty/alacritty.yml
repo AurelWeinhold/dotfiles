@@ -1,0 +1,45 @@
+scrolling:
+  history: 100000
+
+font:
+  normal:
+    family: Hack Nerd Font Mono
+    style: Regular
+
+  bold:
+    family: Hack Nerd Font Mono
+    style: Bold
+
+  italic:
+    family: Hack Nerd Font Mono
+    style: Italic
+
+  # Point size
+  size: 10.0
+
+mouse:
+  hide_when_typing: true
+
+
+key_bindings:
+  # copy and paste
+  - { key: C, mods: Alt, action: Copy  }
+  - { key: V, mods: Alt, action: Paste }
+
+  # scroll
+  - { key: J, mods: Alt, action: ScrollLineDown     }
+  - { key: K, mods: Alt, action: ScrollLineUp       }
+  - { key: D, mods: Alt, action: ScrollHalfPageDown }
+  - { key: U, mods: Alt, action: ScrollHalfPageUp   }
+   
+  # font size
+  - { key: S,     mods: Alt, action: ResetFontSize    }
+  - { key: Plus,  mods: Alt, action: IncreaseFontSize }
+  - { key: Minus, mods: Alt, action: DecreaseFontSize }
+
+  # open new term at pwd
+  - { key: Return, mods: Alt, action: SpawnNewInstance }
+
+  # vi mode
+  - { key: V,      mods: Alt,           action: ToggleViMode }
+  - { key: Escape,            mode: Vi, action: ToggleViMode } # escape vi mode using escape

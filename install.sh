@@ -23,6 +23,7 @@ function post()
 function install_all()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
+		alacritty \
 		nvim \
 		scripts \
 		waybar \
