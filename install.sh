@@ -25,6 +25,8 @@ function install_all()
 	stow --restow --target="$target" --ignore="readme.md" \
 		nvim \
 		scripts \
+		waybar \
+		zathura \
 		zsh
 }
 
