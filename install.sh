@@ -12,6 +12,7 @@ function pre()
 	# create directories that might also be used by other programs
 	[ -d "$target/.config" ] || mkdir -p "$target/.config"
 	[ -d "$target/.local/share" ] || mkdir -p "$target/.local/share"
+	[ -d "$target/.local/bin" ] || mkdir -p "$target/.local/bin"
 }
 
 function post()
@@ -23,6 +24,7 @@ function install_all()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
 		nvim \
+		scripts \
 		zsh
 }
 
