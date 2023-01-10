@@ -41,5 +41,5 @@ key_bindings:
   - { key: Return, mods: Alt, action: SpawnNewInstance }
 
   # vi mode
-  - { key: V,      mods: Alt,           action: ToggleViMode }
+  - { key: N,      mods: Alt,           action: ToggleViMode }
   - { key: Escape,            mode: Vi, action: ToggleViMode } # escape vi mode using escape
