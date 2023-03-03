@@ -57,16 +57,13 @@ window > box {
 
 /* all */
 #custom-dwl_tag, #pulseaudio, #backlight, #network, #battery, #clock {
+	background-color: @darkgray;
 	color: @bg;
 	/* top right bottom left */
 	padding: 6px 7px 4px 7px;
 	border-radius: 4px;
 }
 /* \all */
-
-#custom-dwl_tag {
-    color: @fg;
-}
 
 #custom-dwl_tag.selected {
 	background-color: @darkcyan;
@@ -78,32 +75,12 @@ window > box {
 	color: @bg;
 }
 
-#pulseaudio {
-	background-color: @darkgreen;
-}
-
-#backlight {
-	background-color: @darkcyan;
-}
-
-#network {
-	background-color: @darkblue;
-}
-
-#battery {
-	background-color: @darkgreen;
-}
-
 #battery.warning:not(.charging) {
     background-color: @darkyellow;
 }
 
 #battery.critical:not(.charging) {
     background-color: @darkred;
-}
-
-#clock {
-	background-color: @darkmagenta;
 }
 
 /** \MODULES **/
