@@ -1,3 +1,5 @@
+/* vim: set ft=json : */
+
 [{
 	"output": "eDP-1",
     "layer": "top",
