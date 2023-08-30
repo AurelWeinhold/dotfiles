@@ -7,16 +7,7 @@
     "spacing": 2,
 
 	"modules-left": [
-		"custom/dwl_tag#0",
-		"custom/dwl_tag#1",
-		"custom/dwl_tag#2",
-		"custom/dwl_tag#3",
-		"custom/dwl_tag#4",
-		"custom/dwl_tag#5",
-		"custom/dwl_tag#6",
-		"custom/dwl_tag#7",
-		"custom/dwl_tag#8",
-		"custom/dwl_tag#9"
+		"hyprland/workspaces"
 	],
     "modules-right": [
 		"pulseaudio",
@@ -27,71 +18,12 @@
 	],
 
     /* Modules configuration */
-    "wlr/workspaces": {
-		"sort-by-number": true,
-    },
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"active-only": "false",
+		"format": "{name}"
+	},
 
-	"custom/dwl_tag#0": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 0",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#1": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 1",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#2": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 2",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#3": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 3",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#4": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 4",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#5": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 5",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#6": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 6",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#7": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 7",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#8": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 8",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#9": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' 9",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_layout": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' layout",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_title": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'eDP-1' title",
-		"format": "{}",
-		"escape": true,
-		"return-type": "json",
-	},
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -155,16 +87,7 @@
     "spacing": 2,
 
 	"modules-left": [
-		"custom/dwl_tag#0",
-		"custom/dwl_tag#1",
-		"custom/dwl_tag#2",
-		"custom/dwl_tag#3",
-		"custom/dwl_tag#4",
-		"custom/dwl_tag#5",
-		"custom/dwl_tag#6",
-		"custom/dwl_tag#7",
-		"custom/dwl_tag#8",
-		"custom/dwl_tag#9"
+		"hyprland/workspaces"
 	],
 
     "modules-right": [
@@ -175,70 +98,10 @@
 	],
 
     // Modules configuration
-    "wlr/workspaces": {
-		"sort-by-number": true,
-    },
-
-	"custom/dwl_tag#0": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 0",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#1": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 1",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#2": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 2",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#3": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 3",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#4": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 4",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#5": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 5",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#6": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 6",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#7": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 7",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#8": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 8",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#9": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' 9",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_layout": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' layout",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_title": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-4' title",
-		"format": "{}",
-		"escape": true,
-		"return-type": "json",
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"active-only": "false",
+		"format": "{name}"
 	},
 
     "clock": {
@@ -302,16 +165,7 @@
     "spacing": 2,
 
 	"modules-left": [
-		"custom/dwl_tag#0",
-		"custom/dwl_tag#1",
-		"custom/dwl_tag#2",
-		"custom/dwl_tag#3",
-		"custom/dwl_tag#4",
-		"custom/dwl_tag#5",
-		"custom/dwl_tag#6",
-		"custom/dwl_tag#7",
-		"custom/dwl_tag#8",
-		"custom/dwl_tag#9"
+		"hyprland/workspaces"
 	],
 
     "modules-right": [
@@ -322,70 +176,10 @@
 	],
 
     // Modules configuration
-    "wlr/workspaces": {
-		"sort-by-number": true,
-    },
-
-	"custom/dwl_tag#0": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 0",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#1": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 1",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#2": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 2",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#3": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 3",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#4": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 4",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#5": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 5",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#6": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 6",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#7": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 7",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#8": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 8",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#9": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' 9",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_layout": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' layout",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_title": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-5' title",
-		"format": "{}",
-		"escape": true,
-		"return-type": "json",
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"active-only": "false",
+		"format": "{name}"
 	},
 
     "clock": {
@@ -449,16 +243,7 @@
     "spacing": 2,
 
 	"modules-left": [
-		"custom/dwl_tag#0",
-		"custom/dwl_tag#1",
-		"custom/dwl_tag#2",
-		"custom/dwl_tag#3",
-		"custom/dwl_tag#4",
-		"custom/dwl_tag#5",
-		"custom/dwl_tag#6",
-		"custom/dwl_tag#7",
-		"custom/dwl_tag#8",
-		"custom/dwl_tag#9"
+		"hyprland/workspaces"
 	],
 
     "modules-right": [
@@ -469,70 +254,10 @@
 	],
 
     // Modules configuration
-    "wlr/workspaces": {
-		"sort-by-number": true,
-    },
-
-	"custom/dwl_tag#0": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 0",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#1": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 1",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#2": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 2",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#3": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 3",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#4": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 4",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#5": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 5",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#6": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 6",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#7": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 7",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#8": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 8",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#9": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' 9",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_layout": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' layout",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_title": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-7' title",
-		"format": "{}",
-		"escape": true,
-		"return-type": "json",
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"active-only": "false",
+		"format": "{name}"
 	},
 
     "clock": {
@@ -596,16 +321,7 @@
     "spacing": 2,
 
 	"modules-left": [
-		"custom/dwl_tag#0",
-		"custom/dwl_tag#1",
-		"custom/dwl_tag#2",
-		"custom/dwl_tag#3",
-		"custom/dwl_tag#4",
-		"custom/dwl_tag#5",
-		"custom/dwl_tag#6",
-		"custom/dwl_tag#7",
-		"custom/dwl_tag#8",
-		"custom/dwl_tag#9"
+		"hyprland/workspaces"
 	],
 
     "modules-right": [
@@ -616,70 +332,10 @@
 	],
 
     // Modules configuration
-    "wlr/workspaces": {
-		"sort-by-number": true,
-    },
-
-	"custom/dwl_tag#0": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 0",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#1": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 1",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#2": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 2",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#3": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 3",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#4": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 4",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#5": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 5",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#6": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 6",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#7": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 7",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#8": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 8",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_tag#9": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' 9",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_layout": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' layout",
-		"format": "{}",
-		"return-type": "json",
-	},
-	"custom/dwl_title": {
-		"exec": "$XDG_CONFIG_HOME/waybar/waybar-dwl.sh 'DP-8' title",
-		"format": "{}",
-		"escape": true,
-		"return-type": "json",
+	"hyprland/workspaces": {
+		"all-outputs": true,
+		"active-only": "false",
+		"format": "{name}"
 	},
 
     "clock": {

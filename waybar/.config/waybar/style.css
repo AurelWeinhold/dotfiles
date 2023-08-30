@@ -56,7 +56,7 @@ window > box {
 /** MODULES **/
 
 /* all */
-#custom-dwl_tag, #pulseaudio, #backlight, #network, #battery, #clock {
+#workspaces button, #pulseaudio, #backlight, #network, #battery, #clock {
 	background-color: @darkgray;
 	color: @bg;
 	/* top right bottom left */
@@ -65,12 +65,32 @@ window > box {
 }
 /* \all */
 
-#custom-dwl_tag.selected {
-	background-color: @darkcyan;
-	color: @bg;
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
 }
 
-#custom-dwl_tag.urgent {
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+    box-shadow: inset 0 -3px @fg;
+}
+
+#workspaces button {
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: @bg;
+	color: @fg;
+}
+
+#workspaces button.active {
+	background-color: @darkcyan;
+    /* box-shadow: inset 0 -3px #ffffff;*/
+	color: @bg;
+}
+#workspaces button.special {
 	background-color: @darkred;
 	color: @bg;
 }
