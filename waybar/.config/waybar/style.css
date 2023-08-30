@@ -98,9 +98,11 @@ button:hover {
 #battery.warning:not(.charging) {
     background-color: @darkyellow;
 }
-
 #battery.critical:not(.charging) {
     background-color: @darkred;
+}
+#battery.charging {
+	background-color: @darkgray;
 }
 
 /** \MODULES **/
