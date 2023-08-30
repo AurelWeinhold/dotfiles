@@ -78,7 +78,7 @@
 			"default": [ "奄", "奔", "墳" ]
         },
         "on-click": "pavucontrol"
-    },
+    }
 
 }, {
 	"output": "DP-4",
@@ -157,7 +157,8 @@
 			"default": [ "奄", "奔", "墳" ]
         },
         "on-click": "pavucontrol"
-    },
+    }
+
 }, {
 	"output": "DP-5",
     "layer": "top",
@@ -235,7 +236,8 @@
 			"default": [ "奄", "奔", "墳" ]
         },
         "on-click": "pavucontrol"
-    },
+    }
+
 }, {
 	"output": "DP-7",
     "layer": "top",
@@ -313,7 +315,8 @@
 			"default": [ "奄", "奔", "墳" ]
         },
         "on-click": "pavucontrol"
-    },
+    }
+
 }, {
 	"output": "DP-8",
     "layer": "top",
@@ -391,5 +394,5 @@
 			"default": [ "奄", "奔", "墳" ]
         },
         "on-click": "pavucontrol"
-    },
+    }
 } ]
