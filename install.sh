@@ -20,16 +20,27 @@ function post()
 	echo "Don't forget to check for any specific instructions in any of the applications submodules readme.md!"
 }
 
-function install_all()
+function install_cli()
+{
+	stow --restow --target="$target" --ignore="readme.md" \
+		nvim \
+		scripts \
+		zsh
+}
+
+function install_gui()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
 		alacritty \
-		nvim \
-		scripts \
 		hypr \
 		waybar \
-		zathura \
-		zsh
+		zathura
+}
+
+function install_all()
+{
+	install_cli
+	install_gui
 }
 
 
