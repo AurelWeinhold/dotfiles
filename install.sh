@@ -26,6 +26,7 @@ function install_all()
 		alacritty \
 		nvim \
 		scripts \
+		hypr \
 		waybar \
 		zathura \
 		zsh
