@@ -1,0 +1,31 @@
+# build directories and compiled files
+build
+*.o
+*.out
+*.class
+
+# tags files, directories and notags
+tags
+tags.lock
+tags.temp
+.notags
+
+# vim
+.vimrc
+.nvimrc
+*.spl
+
+# clangd
+compile_commands.json
+compile_flags.txt
+.clangd
+.cache
+
+# nodejs
+node_modules
+
+# python caches
+__pycache__
+
+# vscode(ium)
+.vscode
