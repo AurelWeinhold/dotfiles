@@ -1,0 +1,7 @@
+configuration {
+  	matching: "normal";
+}
+@import "conf"
+@import "selector"
+
+/* vim:ft=rasi

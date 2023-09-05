@@ -1,0 +1,8 @@
+configuration {
+  	matching:     "fuzzy";
+    display-drun: "Run";
+    show-icons:    true;
+}
+@import "selector"
+
+/* vim:ft=rasi

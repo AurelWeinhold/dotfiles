@@ -34,6 +34,7 @@ function install_gui()
 	stow --restow --target="$target" --ignore="readme.md" \
 		alacritty \
 		hypr \
+		rofi \
 		waybar \
 		zathura
 }

@@ -1,0 +1,8 @@
+configuration {
+	location: 2;
+    lines: 0;
+}
+@import "conf"
+@theme "theme/input"
+
+/* vim:ft=rasi

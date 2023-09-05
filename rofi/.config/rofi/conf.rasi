@@ -1,0 +1,7 @@
+configuration {
+    font: "Hack Nerd Font Mono 10";
+    monitor: "-1";
+	
+}
+
+/* vim:ft=rasi

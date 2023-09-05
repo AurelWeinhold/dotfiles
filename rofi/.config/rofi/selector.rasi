@@ -1,0 +1,9 @@
+
+configuration {
+    /*theme: "theme/select";*/
+    lines: 28;
+}
+@import "conf"
+@theme "theme/select"
+
+/* vim:ft=rasi
