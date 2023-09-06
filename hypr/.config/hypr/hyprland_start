@@ -2,9 +2,4 @@
 
 cd ~
 
-# wayland specific
-export _JAVA_AWT_WM_NONREPARENTING=1
-export XCURSOR_SIZE=24
-export MOZ_ENABLE_WAYLAND=1
-
 exec Hyprland 2> /home/aurel/.cache/hypr/error.log
