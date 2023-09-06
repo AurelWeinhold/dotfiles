@@ -33,6 +33,7 @@ function install_gui()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
 		alacritty \
+		dunst \
 		hypr \
 		rofi \
 		waybar \
