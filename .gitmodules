@@ -10,6 +10,3 @@
 [submodule "zsh/.config/zsh/plugins/zsh-history-substring-search"]
 	path = zsh/.config/zsh/plugins/zsh-history-substring-search
 	url = https://github.com/zsh-users/zsh-history-substring-search.git
-[submodule "nvim"]
-	path = nvim
-	url = https://github.com/AurelWeinhold/nvim
