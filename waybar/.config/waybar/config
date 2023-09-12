@@ -27,14 +27,14 @@
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b  %H:%M}",
-        "format": "{:%a %d %b  %H:%M}"
+        "format-alt": "{:%a %d %b 󰥔  %H:%M}",
+        "format": "{:%a %d %b 󰥔  %H:%M}"
     },
 
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "" ]
+        "format-icons": ["󰃞", "󰃟", "󰃠" ]
     },
 
     "battery": {
@@ -43,39 +43,39 @@
             "critical": 10
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ﮣ",
-        "format-plugged": "{capacity}% ﮣ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄",
         "format-alt": "{time} {icon}",
-		"format-icons": ["", "", "", "", "", "", ""]
+		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "network": {
-        "format-wifi": "直 {essid}",
+        "format-wifi": "󰤨  {essid}",
         "format-ethernet": "{ipaddr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected 睊",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-linked": "{ifname} (No IP) 󰤩",
+        "format-disconnected": "Disconnected 󰤭",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}"
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "婢 {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
+        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
+        "format-muted": "󰍭  {format_source}",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
 			"critical": 0
 		},
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
-			"default": [ "奄", "奔", "墳" ]
+			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
         },
         "on-click": "pavucontrol"
     }
@@ -106,14 +106,14 @@
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b  %H:%M}",
-        "format": "{:%a %d %b  %H:%M}"
+        "format-alt": "{:%a %d %b 󰥔  %H:%M}",
+        "format": "{:%a %d %b 󰥔  %H:%M}"
     },
 
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "" ]
+        "format-icons": ["󰃞", "󰃟", "󰃠" ]
     },
 
     "battery": {
@@ -122,39 +122,39 @@
             "critical": 10
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ﮣ",
-        "format-plugged": "{capacity}% ﮣ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄",
         "format-alt": "{time} {icon}",
-		"format-icons": ["", "", "", "", "", "", ""]
+		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "network": {
-        "format-wifi": "直 {essid}",
+        "format-wifi": "󰤨  {essid}",
         "format-ethernet": "{ipaddr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected 睊",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-linked": "{ifname} (No IP) 󰤩",
+        "format-disconnected": "Disconnected 󰤭",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}"
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "婢 {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
+        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
+        "format-muted": "󰍭  {format_source}",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
 			"critical": 0
 		},
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
-			"default": [ "奄", "奔", "墳" ]
+			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
         },
         "on-click": "pavucontrol"
     }
@@ -185,14 +185,14 @@
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b  %H:%M}",
-        "format": "{:%a %d %b  %H:%M}"
+        "format-alt": "{:%a %d %b 󰥔  %H:%M}",
+        "format": "{:%a %d %b 󰥔  %H:%M}"
     },
 
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "" ]
+        "format-icons": ["󰃞", "󰃟", "󰃠" ]
     },
 
     "battery": {
@@ -201,39 +201,39 @@
             "critical": 10
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ﮣ",
-        "format-plugged": "{capacity}% ﮣ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄",
         "format-alt": "{time} {icon}",
-		"format-icons": ["", "", "", "", "", "", ""]
+		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "network": {
-        "format-wifi": "直 {essid}",
+        "format-wifi": "󰤨  {essid}",
         "format-ethernet": "{ipaddr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected 睊",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-linked": "{ifname} (No IP) 󰤩",
+        "format-disconnected": "Disconnected 󰤭",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}"
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "婢 {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
+        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
+        "format-muted": "󰍭  {format_source}",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
 			"critical": 0
 		},
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
-			"default": [ "奄", "奔", "墳" ]
+			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
         },
         "on-click": "pavucontrol"
     }
@@ -264,14 +264,14 @@
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b  %H:%M}",
-        "format": "{:%a %d %b  %H:%M}"
+        "format-alt": "{:%a %d %b 󰥔  %H:%M}",
+        "format": "{:%a %d %b 󰥔  %H:%M}"
     },
 
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "" ]
+        "format-icons": ["󰃞", "󰃟", "󰃠" ]
     },
 
     "battery": {
@@ -280,39 +280,39 @@
             "critical": 10
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ﮣ",
-        "format-plugged": "{capacity}% ﮣ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄",
         "format-alt": "{time} {icon}",
-		"format-icons": ["", "", "", "", "", "", ""]
+		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "network": {
-        "format-wifi": "直 {essid}",
+        "format-wifi": "󰤨  {essid}",
         "format-ethernet": "{ipaddr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected 睊",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-linked": "{ifname} (No IP) 󰤩",
+        "format-disconnected": "Disconnected 󰤭",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}"
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "婢 {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
+        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
+        "format-muted": "󰍭  {format_source}",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
 			"critical": 0
 		},
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
-			"default": [ "奄", "奔", "墳" ]
+			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
         },
         "on-click": "pavucontrol"
     }
@@ -343,14 +343,14 @@
 
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b  %H:%M}",
-        "format": "{:%a %d %b  %H:%M}"
+        "format-alt": "{:%a %d %b   %H:%M}",
+        "format": "{:%a %d %b   %H:%M}"
     },
 
     "backlight": {
         "device": "intel_backlight",
         "format": "{percent}% {icon}",
-        "format-icons": ["", "", "" ]
+        "format-icons": ["󰃞", "󰃟", "󰃠" ]
     },
 
     "battery": {
@@ -359,39 +359,39 @@
             "critical": 10
         },
         "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% ﮣ",
-        "format-plugged": "{capacity}% ﮣ",
+        "format-charging": "{capacity}% 󰂄",
+        "format-plugged": "{capacity}% 󰂄",
         "format-alt": "{time} {icon}",
-		"format-icons": ["", "", "", "", "", "", ""]
+		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
 
     "network": {
-        "format-wifi": "直 {essid}",
+        "format-wifi": "󰤨  {essid}",
         "format-ethernet": "{ipaddr}",
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "Disconnected 睊",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        "format-linked": "{ifname} (No IP) 󰤩",
+        "format-disconnected": "Disconnected 󰤭",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "tooltip-format": "{ifname} via {gwaddr}"
     },
 
     "pulseaudio": {
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "婢 {icon} {format_source}",
-        "format-muted": "婢 {format_source}",
+        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
+        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
+        "format-muted": "󰍭  {format_source}",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
 			"critical": 0
 		},
         "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "headphone": "󰋋",
+            "hands-free": "󰋎",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
-			"default": [ "奄", "奔", "墳" ]
+			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
         },
         "on-click": "pavucontrol"
     }
