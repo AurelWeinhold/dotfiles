@@ -5,6 +5,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# create cache directory if it doesn't exist
+if [[ -d "${XDG_CACHE_HOME:-$HOME/.cache}/zsh" ]]; then
+	mkdir -p $XDG_CACHE_HOME/zsh
+fi
+
 #
 ###### PLUGINS ######
 #
@@ -52,6 +57,7 @@ bindkey -M vicmd 'k' history-substring-search-up
 bindkey -M vicmd 'j' history-substring-search-down
 
 # more history
+export HISTFILE=${XDG_CACHE_HOME:-$HOME/.cache}/zsh/hist
 export HISTSIZE=1000000000
 export SAVEHIST=1000000000
 setopt EXTENDED_HISTORY
