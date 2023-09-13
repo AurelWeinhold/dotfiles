@@ -40,6 +40,7 @@ zstyle ':completion:*' max-errors 1
 zstyle ':completion:*' original true
 zstyle ':completion:*' special-dirs false
 zstyle ':completion:*' verbose true
+zstyle ':completion:*' rehash true
 zstyle :compinstall filename "$ZDOTDIR/.zshrc"
 
 autoload -Uz compinit
