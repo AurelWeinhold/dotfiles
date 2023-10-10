@@ -1,6 +1,6 @@
 configuration {
-    font: "Roboto 12";
-    monitor: "-1";
+	font: "Roboto 12";
+	monitor: "-1";
 }
 
 /* vim:ft=rasi
