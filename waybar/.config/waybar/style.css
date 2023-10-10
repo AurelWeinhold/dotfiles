@@ -39,8 +39,8 @@ window#waybar {
 }
 
 window > box {
-    font-size: 11pt;
-    font-family: Hack;
+    font-size: 12pt;
+    font-family: Roboto;
 	background-color: @bg;
     color: @fg;
 	padding: 2px;
