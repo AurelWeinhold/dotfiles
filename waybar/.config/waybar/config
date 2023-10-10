@@ -59,10 +59,10 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
-        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
-        "format-muted": "󰍭  {format_source}",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}󰂯",
+        "format-bluetooth-muted": "{icon}󰂯",
+        "format-muted": "󰝟",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
@@ -138,10 +138,10 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
-        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
-        "format-muted": "󰍭  {format_source}",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}󰂯",
+        "format-bluetooth-muted": "{icon}󰂯",
+        "format-muted": "󰍭",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
@@ -217,10 +217,10 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
-        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
-        "format-muted": "󰍭  {format_source}",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}󰂯",
+        "format-bluetooth-muted": "{icon}󰂯",
+        "format-muted": "󰍭",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
@@ -296,10 +296,10 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
-        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
-        "format-muted": "󰍭  {format_source}",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}󰂯",
+        "format-bluetooth-muted": "{icon}󰂯",
+        "format-muted": "󰍭",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
@@ -375,10 +375,10 @@
     },
 
     "pulseaudio": {
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon}󰂯  {format_source}",
-        "format-bluetooth-muted": "{icon}󰂯  {format_source}",
-        "format-muted": "󰍭  {format_source}",
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}󰂯",
+        "format-bluetooth-muted": "{icon}󰂯",
+        "format-muted": "󰍭",
         "format-source": "",
         "format-source-muted": "",
 		"status": {
