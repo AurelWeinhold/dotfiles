@@ -59,6 +59,12 @@ window > box {
 	padding: 6px 9px 4px 9px;
 	border-radius: 16px;
 }
+
+#tray {
+	/* top right bottom left */
+	padding: 6px 9px 4px 9px;
+	border-radius: 16px;
+}
 /* \all */
 
 button {
