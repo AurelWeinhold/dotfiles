@@ -1,21 +1,25 @@
 @import "colors-gruvbox-dark-hard"
 
 window {
-    background-color: @background;
-    border:           2;
-    padding:          2;
-    border-radius:    0;
+    background-color:	@background;
+	border-color:		@dark-red-light;
+    border:				1;
+    padding:          	2;
+    border-radius:    	16;
+	height:				380px;
+	width:				600px;
+	children:			[ mainbox ];
 }
 
 mainbox {
     border:  0;
-    padding: 5;
+	children: [ inputbar, message, listview ];
 }
 
 message {
-    border:       2px 0 0;
+    padding: 10px;
+    border:  0px 2px 2px 2px;
     border-color: @separatorcolor;
-    padding:      0px;
 }
 
 textbox {
@@ -24,16 +28,20 @@ textbox {
 }
 
 listview {
-    border:       2px solid 0 0;
-    padding:      5px 0 0;
-    border-color: @separatorcolor;
-    spacing:      2px;
+	padding: 8px;
+    border-radius: 0px 0px 10px 10px;
+    border: 2px 2px 2px 2px;
+    dynamic: false;
+
+
+    border-color: @background;
     scrollbar:    #000000;
 }
 
 element {
-    border:  0;
     padding: 5px;
+    vertical-align: 0.5;
+	border-radius: 16px;
 }
 
 element.normal.normal {
@@ -95,18 +103,34 @@ sidebar {
 }
 
 inputbar {
-    spacing:    0;
-    text-color: @normal-foreground;
-    padding:    2px;
-    children:   [ prompt, textbox-prompt-sep, entry, case-indicator ];
+	margin:			20px 0 5px 0;
+    padding:		5px;
+
+	border:			1px;
+	border-radius:	10px 10px 0px 0px;
+	border-color:	@background;
+
+    spacing:		0;
+    text-color:		@normal-foreground;
+    children:		[ prompt, entry, case-indicator ];
 }
 
 case-indicator,
 entry,
 prompt,
 button {
+    margin: 0px 12px 0em 12px ;
     spacing:    0;
     text-color: @normal-foreground;
+}
+
+prompt {
+	font: "Roboto 20";
+}
+
+entry {
+	margin: 0px;
+	vertical-align: 0.4;
 }
 
 button.selected {
@@ -124,6 +148,12 @@ textbox-prompt-sep {
 element-text, element-icon {
     background-color: inherit;
     text-color:       inherit;
+	margin-right: 10px;
+	vertical-align: 0.5;
+}
+
+element-icon {
+	size: 1.2em ;
 }
 
 /* vim:ft=rasi

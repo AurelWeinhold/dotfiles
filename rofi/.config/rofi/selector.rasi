@@ -1,7 +1,6 @@
-
 configuration {
     /*theme: "theme/select";*/
-    lines: 28;
+    lines: 8;
 }
 @import "conf"
 @theme "theme/select"

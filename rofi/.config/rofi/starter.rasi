@@ -1,6 +1,6 @@
 configuration {
   	matching:     "fuzzy";
-    display-drun: "Run";
+    display-drun: "󰀻";
     show-icons:    true;
 }
 @import "selector"
