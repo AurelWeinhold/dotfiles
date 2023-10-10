@@ -1,0 +1,154 @@
+@import "colors-gruvbox-dark-hard"
+
+window {
+	background-color:	@background;
+	border-color:		@dark-red-light;
+	border:				1;
+	padding:		  	2;
+	border-radius:		16;
+	children:			[ mainbox ];
+}
+
+mainbox {
+	border:		0;
+}
+
+message {
+	padding:	10px;
+	border:		0px 2px 2px 2px;
+	border-color: @separatorcolor;
+}
+
+textbox {
+	highlight:	@highlight;
+	text-color:	@foreground;
+}
+
+listview {
+	padding:		8px;
+	border-radius:	0px 0px 10px 10px;
+	border:			2px 2px 2px 2px;
+	dynamic:		false;
+
+
+	border-color:	@background;
+	scrollbar:		#000000;
+}
+
+element {
+	vertical-align:	0.5;
+	border-radius:	16px;
+}
+
+element.normal.normal {
+	background-color:	@normal-background;
+	text-color:			@normal-foreground;
+}
+
+element.normal.urgent {
+	background-color:	@urgent-background;
+	text-color:			@urgent-foreground;
+}
+
+element.normal.active {
+	background-color:	@active-background;
+	text-color:			@active-foreground;
+}
+
+element.selected.normal {
+	background-color:	@selected-normal-background;
+	text-color:			@selected-normal-foreground;
+}
+
+element.selected.urgent {
+	background-color:	@selected-urgent-background;
+	text-color:			@selected-urgent-foreground;
+}
+
+element.selected.active {
+	background-color:	@selected-active-background;
+	text-color:			@selected-active-foreground;
+}
+
+element.alternate.normal {
+	background-color:	@alternate-normal-background;
+	text-color:			@alternate-normal-foreground;
+}
+
+element.alternate.urgent {
+	background-color:	@alternate-urgent-background;
+	text-color:			@alternate-urgent-foreground;
+}
+
+element.alternate.active {
+	background-color:	@alternate-active-background;
+	text-color:			@alternate-active-foreground;
+}
+
+scrollbar {
+	width:			0px;
+	border:			0;
+	handle-color:	@scrollbar-handle;
+	handle-width:	0px;
+	padding:		0;
+}
+
+sidebar {
+	border:			2px 0 0;
+	border-color:	@separatorcolor;
+}
+
+inputbar {
+	margin:			20px 0 5px 0;
+	padding:		5px;
+
+	border:			1px;
+	border-radius:	10px 10px 0px 0px;
+	border-color:	@background;
+
+	spacing:		0;
+	text-color:		@normal-foreground;
+	children:		[ prompt, entry, case-indicator ];
+}
+
+case-indicator,
+entry,
+prompt,
+button {
+	margin:		0px 12px 0em 12px ;
+	spacing:	0;
+	text-color: @normal-foreground;
+}
+
+prompt {
+	font: "Roboto 20";
+}
+
+entry {
+	margin:			0px;
+	vertical-align:	0.4;
+}
+
+button.selected {
+	background-color:	@selected-normal-background;
+	text-color:			@selected-normal-foreground;
+}
+
+textbox-prompt-sep {
+	expand:		false;
+	str:		":";
+	text-color: @normal-foreground;
+	margin:		0 0.3em 0 0;
+}
+
+element-text, element-icon {
+	background-color:	inherit;
+	text-color:			inherit;
+	margin-right:		10px;
+	vertical-align:		0.5;
+}
+
+element-icon {
+	size: 1.2em ;
+}
+
