@@ -1,0 +1,8 @@
+configuration {
+	font: "Roboto 40";
+	monitor: "-1";
+	lines: 1;
+}
+@theme "theme/menu"
+
+/* vim:ft=rasi

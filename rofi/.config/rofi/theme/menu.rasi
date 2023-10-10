@@ -1,0 +1,19 @@
+@import "theme"
+
+window {
+	width: 615px;
+}
+
+mainbox {
+	children: [ message, listview ];
+}
+
+listview {
+	layout: horizontal;
+}
+
+element {
+	padding: 15px 35px 15px 30px;
+}
+
+/* vim:ft=rasi
