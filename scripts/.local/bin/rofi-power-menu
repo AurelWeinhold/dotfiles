@@ -53,8 +53,7 @@ actions[shutdown]="systemctl poweroff"
 confirmations=()
 
 # By default, no dry run
-# todo revert!
-dryrun=true
+dryrun=false
 showsymbols=true
 showtext=false
 
