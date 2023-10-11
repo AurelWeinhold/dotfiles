@@ -48,8 +48,9 @@ actions[hibernate]="systemctl hibernate"
 actions[reboot]="systemctl reboot"
 actions[shutdown]="systemctl poweroff"
 
-# By default, ask for confirmation for actions that are irreversible
-confirmations=(reboot shutdown logout)
+# Ask for confirmation for actions that are irreversible
+#confirmations=(reboot shutdown logout)
+confirmations=()
 
 # By default, no dry run
 # todo revert!
