@@ -92,7 +92,7 @@ button:hover {
 #workspaces button.active {
 	color: @darkcyan;
 }
-#workspaces button.special {
+#workspaces button.urgent {
 	color: @darkred;
 }
 
