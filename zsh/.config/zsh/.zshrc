@@ -35,7 +35,7 @@ zstyle ':completion:*' ignore-parents parent pwd .. directory
 zstyle ':completion:*' insert-unambiguous true
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-suffixes true
-zstyle ':completion:*' matcher-list '+m:{[:lower:]}={[:upper:]} r:|[._-]=* r:|=*' '' '' 'l:|=* r:|=*'
+zstyle ':completion:*' matcher-list '+m:{[:lower:]}={[:upper:]} m:{[:upper:]}={[:lower:]}'
 zstyle ':completion:*' max-errors 1
 zstyle ':completion:*' original true
 zstyle ':completion:*' special-dirs false
