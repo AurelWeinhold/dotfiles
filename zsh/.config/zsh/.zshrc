@@ -93,9 +93,6 @@ fi
 alias vi='vim'		# never use vi instead use vim
 alias im='vim'
 
-alias virc="cd $XDG_CONFIG_HOME/nvim"
-alias vimrc="virc"
-
 alias open='xdg-open'	# opens files
 alias cl='clear'
 
