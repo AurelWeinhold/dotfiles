@@ -66,11 +66,14 @@ setopt HIST_IGNORE_ALL_DUPS
 setopt EXTENDED_HISTORY
 setopt share_history
 
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
+# Preferred editor for local and remote sessions and local manpager
+# -n SSH_CONNECTION is non-empty
+# -z string is empty
+if [[ -n $SSH_CONNECTION  || -z "$(command -v nvim)" ]]; then
   export EDITOR='vim'
 else
   export EDITOR='nvim'
+	export MANPAGER='nvim +Man!'
 fi
 
 #
