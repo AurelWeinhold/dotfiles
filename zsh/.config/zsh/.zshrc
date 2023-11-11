@@ -2,7 +2,7 @@
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+	source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # create cache directory if it doesn't exist
@@ -69,10 +69,10 @@ setopt share_history
 # Preferred editor for local and remote sessions and local manpager
 # -n SSH_CONNECTION is non-empty
 # -z string is empty
-if [[ -n $SSH_CONNECTION  || -z "$(command -v nvim)" ]]; then
-  export EDITOR='vim'
+if [[ -n $SSH_CONNECTION || -z "$(command -v nvim)" ]]; then
+	export EDITOR='vim'
 else
-  export EDITOR='nvim'
+	export EDITOR='nvim'
 	export MANPAGER='nvim +Man!'
 fi
 
@@ -149,9 +149,9 @@ alias mek="make"
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 
 # function to merge pdfs using GhostScript
- pdfcombine () {
-     gs -q -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=${1%.*}.pdf -dBATCH ${@:2}
- }
+pdfcombine () {
+	gs -q -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=${1%.*}.pdf -dBATCH ${@:2}
+}
 
 # To customize prompt, run `p10k configure` or edit $ZDOTDIR/.p10k.zsh.
 [[ ! -f $ZDOTDIR/.p10k.zsh ]] || source $ZDOTDIR/.p10k.zsh
