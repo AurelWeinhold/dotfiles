@@ -87,7 +87,7 @@ alias locate="locate -i"
 alias term="$TERMINAL"
 
 # neovim
-if [[ -z "$(command -v nvim)" ]]; then
+if [[ -n "$(command -v nvim)" ]]; then
 	alias vim='nvim'	# never use vim, instead use neovim
 fi
 alias vi='vim'		# never use vi instead use vim
