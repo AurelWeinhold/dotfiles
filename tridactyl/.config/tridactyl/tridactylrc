@@ -1,0 +1,17 @@
+bind gd tabdetach
+bind gD composite tabduplicate; tabdetach
+
+bind --mode=normal j scrollline 2
+bind --mode=normal k scrollline -2
+
+bind --mode=normal x tabclose
+
+set theme shydactyl
+
+set smoothscroll true
+
+ bind / fillcmdline find
+ bind ? fillcmdline find -?
+ bind n findnext 1
+ bind N findnext -1
+ bind ,<Space> nohlsearch
