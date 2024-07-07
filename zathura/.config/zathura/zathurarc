@@ -49,3 +49,7 @@ set index-active-fg "#504945"
 
 set inputbar-bg "#1d2021"
 set inputbar-fg "#fbf1c7"
+
+# regularly j and k don't do smooth scrolling
+map j feedkeys "<C-Down>"
+map k feedkeys "<C-Up>"
