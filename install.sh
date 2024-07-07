@@ -35,6 +35,7 @@ function install_gui()
 		dunst \
 		hypr \
 		rofi \
+		tridactyl \
 		waybar \
 		zathura
 }
