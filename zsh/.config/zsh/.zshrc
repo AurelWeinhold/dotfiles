@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # create cache directory if it doesn't exist
-if [[ -d "${XDG_CACHE_HOME:-$HOME/.cache}/zsh" ]]; then
+if [[ ! -d "${XDG_CACHE_HOME:-$HOME/.cache}/zsh" ]]; then
 	mkdir -p $XDG_CACHE_HOME/zsh
 fi
 
