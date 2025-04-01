@@ -24,6 +24,7 @@ function install_cli()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
 		git \
+		tmux \
 		scripts \
 		zsh
 }
