@@ -94,7 +94,6 @@ alias vi='vim'		# never use vi instead use vim
 alias im='vim'
 
 alias open='xdg-open'	# opens files
-alias cl='clear'
 
 # ls
 alias l="ls -lh --group-directories-first --sort=extension --color -Itags"
