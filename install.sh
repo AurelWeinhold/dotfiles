@@ -4,7 +4,7 @@
 target="$HOME"
 
 
-function pre()
+pre()
 {
 	# pull all submodules
 	git submodule update --init --recursive
@@ -15,12 +15,12 @@ function pre()
 	[ -d "$target/.local/bin" ] || mkdir -p "$target/.local/bin"
 }
 
-function post()
+post()
 {
 	echo "Don't forget to check for any specific instructions in any of the applications submodules readme.md!"
 }
 
-function install_cli()
+install_cli()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
 		git \
@@ -29,7 +29,7 @@ function install_cli()
 		zsh
 }
 
-function install_gui()
+install_gui()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
 		alacritty \
@@ -41,7 +41,7 @@ function install_gui()
 		zathura
 }
 
-function install_all()
+install_all()
 {
 	install_cli
 	install_gui
