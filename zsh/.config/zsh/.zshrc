@@ -84,7 +84,7 @@ alias rf='rm -rf'						# remove folder
 alias grep='grep -ni --color=always'	# nicer grep output
 
 alias locate="locate -i"
-alias term="$TERMINAL"
+alias term="$TERM"
 
 # neovim
 if [[ -n "$(command -v nvim)" ]]; then
