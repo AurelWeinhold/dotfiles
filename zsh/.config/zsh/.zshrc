@@ -93,7 +93,10 @@ fi
 alias vi='vim'		# never use vi instead use vim
 alias im='vim'
 
-alias open='xdg-open'	# opens files
+# run xdg-open in the background
+open () {
+	/usr/bin/xdg-open $@ &|
+}
 
 # ls
 alias l="ls -lh --group-directories-first --sort=extension --color -Itags"
