@@ -1,0 +1,8 @@
+width=30%
+height=29%
+allow_images=true
+mode=fuzzy
+insensitive=true
+key_down=Shift-J
+key_up=Shift-K
+layer=overlay

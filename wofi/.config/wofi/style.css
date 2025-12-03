@@ -1,0 +1,29 @@
+window {
+	border: solid #cc241d 1px;
+	border-radius: 12pt;
+	font-size: 12pt;
+	background-color: #1d2021;
+}
+
+#outer-box {
+	padding: 20px;
+}
+
+#img {
+	margin-right: 6px;
+}
+
+#input {
+	font-size:     15pt;
+	margin-bottom:  20px;
+	padding:		5px;
+	padding-left:   10px;
+
+	border-radius:	16px;
+
+}
+
+#entry {
+	padding: 5px;
+	border-radius: 16px;
+}

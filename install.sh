@@ -38,6 +38,7 @@ install_gui()
 		rofi \
 		tridactyl \
 		waybar \
+		wofi \
 		zathura
 }
 
