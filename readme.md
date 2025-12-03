@@ -9,3 +9,4 @@ The collection of my personal dotfiles.
 
 ### Git
 - [delta](https://github.com/dandavison/delta)
+- [Mergiraf](https://mergiraf.org/)
