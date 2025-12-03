@@ -23,6 +23,7 @@ post()
 install_cli()
 {
 	stow --restow --target="$target" --ignore="readme.md" \
+		ctags \
 		git \
 		tmux \
 		scripts \
