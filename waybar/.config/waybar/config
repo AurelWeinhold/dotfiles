@@ -1,122 +1,122 @@
 /* vim: set ft=json : */
 
 [
-{
-	"output": "eDP-1",
-    "layer": "top",
-    "position": "bottom",
-    "spacing": 12,
+	{
+		"output": "eDP-1",
+		"layer": "top",
+		"position": "bottom",
+		"spacing": 12,
 
-	"modules-left": [
-		"hyprland/workspaces"
-	],
-    "modules-right": [
-		"tray",
-		"pulseaudio",
-		"backlight",
-		"network",
-		"battery",
-		"clock"
-	],
+		"modules-left": [
+			"hyprland/workspaces"
+		],
+		"modules-right": [
+			"tray",
+			"pulseaudio",
+			"backlight",
+			"network",
+			"battery",
+			"clock"
+		],
 
-    /* Modules configuration */
-	"hyprland/workspaces": {
-		"all-outputs": false,
-		"active-only": "false",
-		"format": "{icon}",
-		"format-icons": {
-			"11": "1",
-			"12": "2",
-			"13": "3",
-			"14": "4",
-			"15": "5",
-			"16": "6",
-			"17": "7",
-			"18": "8",
-			"19": "9",
-			"20": "10"
-		}
-	},
-
-	"tray": {
-		"icon-size": 21,
-		"spacing": 10
-	},
-
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b 󰥔  %H:%M}",
-        "format": "{:%a %d %b 󰥔  %H:%M}"
-    },
-
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{percent}% {icon}",
-        "format-icons": ["󰃞", "󰃟", "󰃠" ]
-    },
-
-    "battery": {
-        "states": {
-            "warning": 20,
-            "critical": 10
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󰂄",
-        "format-alt": "{time} {icon}",
-		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
-
-    "network": {
-        "format-wifi": "{essid}  {icon}",
-        "format-ethernet": "{ipaddr}",
-        "format-linked": "{ifname} (No IP) 󰤩",
-        "format-disconnected": "Disconnected 󰤭",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
-        "tooltip-format": "{ifname} via {gwaddr}"
-    },
-
-    "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}󰂯",
-        "format-bluetooth-muted": "{icon}󰂯",
-        "format-muted": "󰝟",
-        "format-source": "",
-        "format-source-muted": "",
-		"status": {
-			"critical": 0
+		/* Modules configuration */
+		"hyprland/workspaces": {
+			"all-outputs": false,
+			"active-only": "false",
+			"format": "{icon}",
+			"format-icons": {
+				"11": "1",
+				"12": "2",
+				"13": "3",
+				"14": "4",
+				"15": "5",
+				"16": "6",
+				"17": "7",
+				"18": "8",
+				"19": "9",
+				"20": "10"
+			}
 		},
-        "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": "󰋎",
-            "headset": "󰋎",
-            "phone": "",
-            "portable": "",
-            "car": "",
-			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
-        },
-        "on-click": "pavucontrol"
-    }
 
-}, {
+		"tray": {
+			"icon-size": 21,
+			"spacing": 10
+		},
+
+		"clock": {
+			"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+			"format-alt": "{:%a %d %b 󰥔  %H:%M}",
+			"format": "{:%a %d %b 󰥔  %H:%M}"
+		},
+
+		"backlight": {
+			"device": "intel_backlight",
+			"format": "{percent}% {icon}",
+			"format-icons": ["󰃞", "󰃟", "󰃠" ]
+		},
+
+		"battery": {
+			"states": {
+				"warning": 20,
+				"critical": 10
+			},
+			"format": "{capacity}% {icon}",
+			"format-charging": "{capacity}% 󰂄",
+			"format-plugged": "{capacity}% 󰂄",
+			"format-alt": "{time} {icon}",
+			"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+		},
+
+		"network": {
+			"format-wifi": "{essid}  {icon}",
+			"format-ethernet": "{ipaddr}",
+			"format-linked": "{ifname} (No IP) 󰤩",
+			"format-disconnected": "Disconnected 󰤭",
+			"format-alt": "{ifname}: {ipaddr}/{cidr}",
+			"format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+			"tooltip-format": "{ifname} via {gwaddr}"
+		},
+
+		"pulseaudio": {
+			"format": "{volume}% {icon}",
+			"format-bluetooth": "{volume}% {icon}󰂯",
+			"format-bluetooth-muted": "{icon}󰂯",
+			"format-muted": "󰝟",
+			"format-source": "",
+			"format-source-muted": "",
+			"status": {
+				"critical": 0
+			},
+			"format-icons": {
+				"headphone": "󰋋",
+				"hands-free": "󰋎",
+				"headset": "󰋎",
+				"phone": "",
+				"portable": "",
+				"car": "",
+				"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
+			},
+			"on-click": "pavucontrol"
+		}
+
+	}, {
 	"output": "!eDP-1",
-    "layer": "top",
-    "position": "bottom",
-    "spacing": 12,
+	"layer": "top",
+	"position": "bottom",
+	"spacing": 12,
 
 	"modules-left": [
 		"hyprland/workspaces"
 	],
 
-    "modules-right": [
+	"modules-right": [
 		"pulseaudio",
 		"network",
 		"battery",
 		"clock"
 	],
 
-    // Modules configuration
+	// Modules configuration
 	"hyprland/workspaces": {
 		"all-outputs": false,
 		"active-only": "false",
@@ -135,61 +135,61 @@
 		}
 	},
 
-    "clock": {
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%a %d %b 󰥔  %H:%M}",
-        "format": "{:%a %d %b 󰥔  %H:%M}"
-    },
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format-alt": "{:%a %d %b 󰥔  %H:%M}",
+		"format": "{:%a %d %b 󰥔  %H:%M}"
+	},
 
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{percent}% {icon}",
-        "format-icons": ["󰃞", "󰃟", "󰃠" ]
-    },
+	"backlight": {
+		"device": "intel_backlight",
+		"format": "{percent}% {icon}",
+		"format-icons": ["󰃞", "󰃟", "󰃠" ]
+	},
 
-    "battery": {
-        "states": {
-            "warning": 20,
-            "critical": 10
-        },
-        "format": "{capacity}% {icon}",
-        "format-charging": "{capacity}% 󰂄",
-        "format-plugged": "{capacity}% 󰂄",
-        "format-alt": "{time} {icon}",
+	"battery": {
+		"states": {
+			"warning": 20,
+			"critical": 10
+		},
+		"format": "{capacity}% {icon}",
+		"format-charging": "{capacity}% 󰂄",
+		"format-plugged": "{capacity}% 󰂄",
+		"format-alt": "{time} {icon}",
 		"format-icons": ["󰂃","󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
+	},
 
-    "network": {
-        "format-wifi": "{essid}  {icon}",
-        "format-ethernet": "{ipaddr}",
-        "format-linked": "{ifname} (No IP) 󰤩",
-        "format-disconnected": "Disconnected 󰤭",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
-        "tooltip-format": "{ifname} via {gwaddr}"
-    },
+	"network": {
+		"format-wifi": "{essid}  {icon}",
+		"format-ethernet": "{ipaddr}",
+		"format-linked": "{ifname} (No IP) 󰤩",
+		"format-disconnected": "Disconnected 󰤭",
+		"format-alt": "{ifname}: {ipaddr}/{cidr}",
+		"format-icons": [ "󰤯", "󰤟", "󰤢", "󰤥", "󰤨" ],
+		"tooltip-format": "{ifname} via {gwaddr}"
+	},
 
-    "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}󰂯",
-        "format-bluetooth-muted": "{icon}󰂯",
-        "format-muted": "󰍭",
-        "format-source": "",
-        "format-source-muted": "",
+	"pulseaudio": {
+		"format": "{volume}% {icon}",
+		"format-bluetooth": "{volume}% {icon}󰂯",
+		"format-bluetooth-muted": "{icon}󰂯",
+		"format-muted": "󰍭",
+		"format-source": "",
+		"format-source-muted": "",
 		"status": {
 			"critical": 0
 		},
-        "format-icons": {
-            "headphone": "󰋋",
-            "hands-free": "󰋎",
-            "headset": "󰋎",
-            "phone": "",
-            "portable": "",
-            "car": "",
+		"format-icons": {
+			"headphone": "󰋋",
+			"hands-free": "󰋎",
+			"headset": "󰋎",
+			"phone": "",
+			"portable": "",
+			"car": "",
 			"default": [ "󰕿", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰖀", "󰕾" ]
-        },
-        "on-click": "pavucontrol"
-    }
+		},
+		"on-click": "pavucontrol"
+	}
 
-}
+	}
 ]
