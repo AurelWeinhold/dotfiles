@@ -5,7 +5,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 
 # environmental variables
 export EDITOR="nvim"
-export TERMINAL="st"
+export TERMINAL="alacritty"
 export BROWSER="firefox"
 export PDF_READER="zathura"
 
