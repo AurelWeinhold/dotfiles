@@ -53,3 +53,4 @@ set inputbar-fg "#fbf1c7"
 # regularly j and k don't do smooth scrolling
 map j scroll smooth-down
 map k scroll smooth-up
+set scroll-step 100
