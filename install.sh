@@ -43,6 +43,15 @@ install_gui()
 		zathura
 }
 
+
+install_without_de()
+{
+	install_cli
+	stow --restow --target="$target" --ignore="readme.md" \
+		alacritty \
+		zathura
+}
+
 install_all()
 {
 	install_cli
