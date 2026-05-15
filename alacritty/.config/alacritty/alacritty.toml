@@ -78,3 +78,6 @@ hide_when_typing = true
 
 [scrolling]
 history = 100000
+
+[window]
+decorations = "None"
