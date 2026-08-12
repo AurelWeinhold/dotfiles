@@ -150,6 +150,9 @@ alias mek="make"
 [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
 [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 
+# jj completions
+source <(COMPLETE=zsh jj)
+
 # function to merge pdfs using GhostScript
 pdfcombine () {
 	gs -q -dNOPAUSE -sDEVICE=pdfwrite -sOUTPUTFILE=${1%.*}.pdf -dBATCH ${@:2}
