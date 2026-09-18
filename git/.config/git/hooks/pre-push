@@ -1,0 +1,5 @@
+#!/bin/sh
+if git log @{u}.. --oneline | grep -q "SAVEPOINT"; then
+	echo "Refusing to push: SAVEPOINT commit present."
+	exit 1
+fi

@@ -20,6 +20,8 @@
 	pager = delta
 	attributesfile = ~/.config/git/attributes
 
+	hooksPath = ~/.config/git/hooks
+
 [interactive]
 	diffFilter = delta --color-only
 
