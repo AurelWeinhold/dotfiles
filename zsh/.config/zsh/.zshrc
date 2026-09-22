@@ -142,6 +142,12 @@ alias maek="make"
 alias mak="make"
 alias mek="make"
 
+# create new directory and enter it
+medir () {
+	mkdir -p "$1" && \
+	cd "$1"
+}
+
 ### \aliases ###
 
 # direnv hooks to enable direnv to work only if it exists
