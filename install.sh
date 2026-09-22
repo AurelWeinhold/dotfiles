@@ -25,6 +25,7 @@ install_cli()
 	stow --restow --target="$target" --ignore="readme.md" \
 		ctags \
 		git \
+		lazygit \
 		tmux \
 		scripts \
 		zsh
